@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyewear Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="filter.css">
+</head>
+<body>
+    <nav class="fnav">
+        <a href="index.html">
+            <img src="logo.jpeg" alt="Lenskart Logo" class="logo">
+            </a>
+        <img src="https://static.lenskart.com/media/mobile/images/phone_number.svg" alt="Phone Number" class="phone-icon">
+        <input type="text" placeholder="What are you looking for">
+        <div class="nav-links">
+            <p>Sign In & Sign Up</p>
+            <p>Wishlist</p>
+            <p>Cart</p>
+        </div>
+    </nav>
+
+    <nav class="snav">
+        <ul class="menu">
+          <li><a href="#" class="menu-item">Eyeglasses</a>
+            <ul class="submenu">
+                <li>
+                  <a href="filter.html">
+                    <img src="men1.jpg" alt="Men"> Men
+                  </a>
+                </li>
+                <li>
+                  <a href="filter.html">
+                    <img src="women1.jpg" alt="Women"> Women
+                  </a>
+                </li>
+                <li>
+                  <a href="filter.html">
+                    <img src="kid.jpg" alt="Kids"> Kids
+                  </a>
+                </li>
+              </ul>
+          </li>
+          <li><a href="#" class="menu-item">Screen Glasses</a>
+            <ul class="submenu">
+              <li>
+                <a href="filter.html">
+                  <img src="men1.jpg" alt="Men"> Men
+                </a>
+              </li>
+              <li>
+                <a href="filter.html">
+                  <img src="women1.jpg" alt="Women"> Women
+                </a>
+              </li>
+              <li>
+                <a href="filter.html">
+                  <img src="kid.jpg" alt="Kids"> Kids
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#" class="menu-item">Contact Lenses</a>
+            <ul class="submenu">
+                <li>
+                  <a href="filter.html">
+                    <img src="men1.jpg" alt="Men"> Men
+                  </a>
+                </li>
+                <li>
+                  <a href="filter.html">
+                    <img src="women1.jpg" alt="Women"> Women
+                  </a>
+                </li>
+                <li>
+                  <a href="filter.html">
+                    <img src="kid.jpg" alt="Kids"> Kids
+                  </a>
+                </li>
+              </ul>
+          </li>
+          <li><a href="#" class="menu-item">Sunglasses</a>
+            <ul class="submenu">
+                <li>
+                  <a href="filter.html">
+                    <img src="men1.jpg" alt="Men"> Men
+                  </a>
+                </li>
+                <li>
+                  <a href="filter.html">
+                    <img src="women1.jpg" alt="Women"> Women
+                  </a>
+                </li>
+                <li>
+                  <a href="filter.html">
+                    <img src="kid.jpg" alt="Kids"> Kids
+                  </a>
+                </li>
+              </ul>
+          </li>
+        </ul>
+    </nav>
+
+    <div class="flexbox">
+        <div class="filters">
+            <h3>Frame Type</h3>
+            <div class="frame-type">
+                <div>
+                    <img src="https://static.lenskart.com/images/cust_mailer/Eyeglass/FullRim.png" />
+                    <span>Full Rim</span>
+                </div>
+                <div>
+                    <img src="https://static.lenskart.com/images/cust_mailer/Eyeglass/HalfRim.png" />
+                    <span>Half Rim</span>
+                </div>
+                <div>
+                    <img src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Rimless.png" />
+                    <span>Rimless</span>
+                </div>
+            </div>
+            <h3>Frame Shape</h3>
+            <div class="frame-shape">
+                <div>
+                    <img src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Rectangle.png" />
+                    <span>Rectangle</span>
+                </div>
+                <div>
+                    <img src="https://static.lenskart.com/images/cust_mailer/Eyeglass/CatEye.png" />
+                    <span>Cat Eye</span>
+                </div>
+                <div>
+                    <img src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Wayfarer.png" />
+                    <span>Wayfarer</span>
+                </div>
+                <div>
+                    <img src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Round.png" />
+                    <span>Round</span>
+                </div>
+                <div>
+                    <img src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Square.png" />
+                    <span>Square</span>
+                </div>
+                <div>
+                    <img src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Aviator.png" />
+                    <span>Aviator</span>
+                </div>
+                <div>
+                    <img src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Hexagonal.png" />
+                    <span>Hexagonal</span>
+                </div>
+            </div>
+            <h3>Lens Types</h3>
+            <div class="lens">
+                <label><input type="checkbox" value="near"> Near</label>
+                <label><input type="checkbox" value="distinct"> Distinct</label>
+            </div>
+            <div class="menus">
+                <div class="dropdown">
+                    <div class="dropdown-toggle">BRANDS <i class="bi bi-chevron-down"></i></div>
+                    <div class="dropdown-content">
+                        <label><input type="checkbox" id="ray-ban-checkbox" checked> Ray-Ban</label>
+                        <label><input type="checkbox" id="fastrack-checkbox"> Fastrack</label>
+                        <label><input type="checkbox"> Gucci</label>
+                        <label><input type="checkbox"> Prada</label>
+                        <label><input type="checkbox"> Oakley</label>
+                        <label><input type="checkbox"> versace</label>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown-toggle">PRICE <i class="bi bi-chevron-down"></i></div>
+                    <div class="dropdown-content">
+                        <label><input type="checkbox"> ₹0 - ₹1000</label>
+                        <label><input type="checkbox"> ₹1001 - ₹2000</label>
+                        <label><input type="checkbox"> ₹2001+</label>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown-toggle">Coating <i class="bi bi-chevron-down"></i></div>
+                    <div class="dropdown-content">
+                        <label><input type="checkbox"> Anti-scratch coating</label>
+                        <label><input type="checkbox"> UV protection coating</label>
+                        <label><input type="checkbox"> Blue light blocking</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="glasses">
+            <div class="sectionHeading">
+                <div>
+                    <p style="color:#329C92">VIEW FRAMES</p>
+                </div>
+                <div>
+                    <p style="color:#329C92;display:inline-block"><i class="bi bi-arrow-down-up"></i> Sort By</p>
+                    <select>
+                        <option value="bstslrs">Best Sellers</option>
+                        <option value="lth">Price : Low to High</option>
+                        <option value="htl">Price : High to Low</option>
+                        <option value="new">New</option>
+                        <option value="bigsaving">Biggest Saving</option>
+                        <option value="mw">Most Viewed</option>
+                    </select>
+                </div>
+            </div>
+           
+            <div class="results">
+                <div>
+                    <img src="https://img.icons8.com/metro/26/000000/like.png" style="float:right"/>
+                    <img class="glass" />
+                    <div class="details">
+                        <h5>Air Online</h5>
+                        <span> 4.3 <img src="https://img.icons8.com/android/10/000000/filled-star.png"/> | 12478 bought</span><br /><br />
+                        <span><b>&#8377;999</b> <span class="cutprice">&#8377;3500</span></span><br />
+                        <button class="add-to-cart"><i class="bi bi-cart-plus"></i><a href="Addtocard.html"></a> Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/metro/26/000000/like.png" style="float:right"/>
+                    <img class="glass" />
+                    <div class="details">
+                        <h5>Studio</h5>
+                        <span> 4.3 <img src="https://img.icons8.com/android/10/000000/filled-star.png"/> | 12478 bought</span><br /><br />
+                        <span><b>&#8377;999</b> <span class="cutprice">&#8377;3500</span></span><br />
+                        <button class="add-to-cart"><i class="bi bi-cart-plus"></i> <a href="Addtocard.html"></a>Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/metro/26/000000/like.png" style="float:right"/>
+                    <img class="glass" />
+                    <div class="details">
+                        <h5>Vinsent Flex</h5>
+                        <span> 4.3 <img src="https://img.icons8.com/android/10/000000/filled-star.png"/> | 12478 bought</span><br /><br />
+                        <span><b>&#8377;999</b> <span class="cutprice">&#8377;3500</span></span><br />
+                        <button class="add-to-cart"><i class="bi bi-cart-plus"></i> <a href="Addtocard.html"></a>Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/metro/26/000000/like.png" style="float:right"/>
+                    <img class="glass" />
+                    <div class="details">
+                        <h5>Air Flex</h5>
+                        <span> 4.3 <img src="https://img.icons8.com/android/10/000000/filled-star.png"/> | 12478 bought</span><br /><br />
+                        <span><b>&#8377;999</b> <span class="cutprice">&#8377;3500</span></span><br />
+                        <button class="add-to-cart"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/metro/26/000000/like.png" style="float:right"/>
+                    <img class="glass" />
+                    <div class="details">
+                        <h5>Glossy Flex</h5>
+                        <span> 4.3 <img src="https://img.icons8.com/android/10/000000/filled-star.png"/> | 12478 bought</span><br /><br />
+                        <span><b>&#8377;999</b> <span class="cutprice">&#8377;3500</span></span><br />
+                        <button class="add-to-cart"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/metro/26/000000/like.png" style="float:right"/>
+                    <img class="glass" />
+                    <div class="details">
+                        <h5>Thin Air</h5>
+                        <span> 4.3 <img src="https://img.icons8.com/android/10/000000/filled-star.png"/> | 12478 bought</span><br /><br />
+                        <span><b>&#8377;999</b> <span class="cutprice">&#8377;3500</span></span><br />
+                        <button class="add-to-cart"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="list">
+            <h2>SERVICES</h2>
+            <ul>
+                <li><a href="#">Visit Store</a></li>
+                <li><a href="#">Buying Guide</a></li>
+                <li><a href="#">Frame Size</a></li>
+                <li><a href="#">Check Power</a></li>
+            </ul>
+        </div>
+
+        <div class="list">
+            <h2>ABOUT US</h2>
+            <ul>
+                <li><a href="#">We Are Hiring</a></li>
+                <li><a href="#">Refer & Earn</a></li>
+                <li><a href="#">Follow Us</a></li>
+                <li><a href="#">Lenskart Coupons</a></li>
+            </ul>
+        </div>
+
+        <div class="list">
+            <h2>HELP</h2>
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Details</a></li>
+            </ul>
+        </div>
+
+        <div class="list">
+            <img src="https://static.lenskart.com/media/desktop/img/play-store.svg" alt="Play Store">
+            <p>Powered By: Cybromatech Technology Pvt Ltd</p>
+        </div>
+    </div>
+
+    <script src="filter.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuItems = document.querySelectorAll('.menu-item');
+            
+            menuItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const submenu = this.nextElementSibling;
+                    
+                    // Close all other open submenus
+                    menuItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.nextElementSibling.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle the clicked submenu
+                    submenu.classList.toggle('active');
+                });
+            });
+    
+            // Close submenu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.menu')) {
+                    document.querySelectorAll('.submenu').forEach(submenu => {
+                        submenu.classList.remove('active');
+                    });
+                }
+            });
+        });
+        </script>
+</body>
+</html>
+

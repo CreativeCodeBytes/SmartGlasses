@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optical Store - Bill Generation</title>
+    <link rel="stylesheet" href="billing.css">
+</head>
+<body>
+    
+        <nav class="fnav">
+            <a href="index.html">
+                <img src="logo.jpeg" alt="Lenskart Logo" class="logo">
+                </a>
+            <img src="https://static.lenskart.com/media/mobile/images/phone_number.svg" alt="Phone Number" class="phone-icon">
+            <input type="text" placeholder="What are you looking for">
+            <div class="nav-links">
+                <p>Sign In & Sign Up</p>
+                <p>Wishlist</p>
+                <p>Cart</p>
+            </div>
+        </nav>
+            <nav class="snav">
+                <ul class="menu">
+                  <li><a href="#" class="menu-item">Eyeglasses</a>
+                    <ul class="submenu">
+                        <li>
+                          <a href="filter.html">
+                            <img src="men1.jpg" alt="Men"> Men
+                          </a>
+                        </li>
+                        <li>
+                          <a href="filter.html">
+                            <img src="women1.jpg" alt="Women"> Women
+                          </a>
+                        </li>
+                        <li>
+                          <a href="filter.html">
+                            <img src="kid.jpg" alt="Kids"> Kids
+                          </a>
+                        </li>
+                      </ul>
+                  </li>
+                  <li><a href="#" class="menu-item">Screen Glasses</a>
+                    <ul class="submenu">
+                      <li>
+                        <a href="filter.html">
+                          <img src="men1.jpg" alt="Men"> Men
+                        </a>
+                      </li>
+                      <li>
+                        <a href="filter.html">
+                          <img src="women1.jpg" alt="Women"> Women
+                        </a>
+                      </li>
+                      <li>
+                        <a href="filter.html">
+                          <img src="kid.jpg" alt="Kids"> Kids
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#" class="menu-item">Contact Lenses</a>
+                    <ul class="submenu">
+                        <li>
+                          <a href="filter.html">
+                            <img src="men1.jpg" alt="Men"> Men
+                          </a>
+                        </li>
+                        <li>
+                          <a href="filter.html">
+                            <img src="women1.jpg" alt="Women"> Women
+                          </a>
+                        </li>
+                        <li>
+                          <a href="filter.html">
+                            <img src="kid.jpg" alt="Kids"> Kids
+                          </a>
+                        </li>
+                      </ul>
+                  </li>
+                  <li><a href="#" class="menu-item">Sunglasses</a>
+                    <ul class="submenu">
+                        <li>
+                          <a href="filter.html">
+                            <img src="men1.jpg" alt="Men"> Men
+                          </a>
+                        </li>
+                        <li>
+                          <a href="filter.html">
+                            <img src="women1.jpg" alt="Women"> Women
+                          </a>
+                        </li>
+                        <li>
+                          <a href="filter.html">
+                            <img src="kid.jpg" alt="Kids"> Kids
+                          </a>
+                        </li>
+                      </ul>
+                  </li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <div class="Bill-Box">
+            <h1><span>Bill Generation</span></h1>
+
+            <form id="bill-form">
+                <div class="form-group">
+                    <label for="customer-name">Customer Name:</label>
+                    <input type="text" id="customer-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-number">Contact Number:</label>
+                    <input type="text" id="contact-number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="product-type">Product Type:</label>
+                    <select id="product-type">
+                        <option value="Sunglasses">Sunglasses</option>
+                        <option value="Frames">Frames</option>
+                        <option value="Contact Lenses">Contact Lenses</option>
+                        <option value="Blue-light Blocking Glasses">Blue-light Blocking Glasses</option>
+                        <option value="Power Lenses">Power Lenses</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company:</label>
+                    <select id="company">
+                        <option value="Company 1">Company 1</option>
+                        <option value="Company 2">Company 2</option>
+                        <option value="Company 3">Company 3</option>
+                        <option value="Company 4">Company 4</option>
+                        <option value="Company 5">Company 5</option>
+                        <option value="Company 6">Company 6</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Children">Children</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="left-eye-power">Left Eye Power:</label>
+                    <input type="number" id="left-eye-power" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="right-eye-power">Right Eye Power:</label>
+                    <input type="number" id="right-eye-power" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lens-option">Lens Option:</label>
+                    <select id="lens-option">
+                        <option value="Lenses + Glasses">Lenses + Glasses</option>
+                        <option value="Glasses without Lenses">Glasses without Lenses</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="product-price">Product Price (₹):</label>
+                    <input type="number" id="product-price" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="payment-option">Payment Option:</label>
+                    <select id="payment-option">
+                        <option value="UPI">UPI</option>
+                        <option value="Cards">Cards</option>
+                        <option value="Cash on Delivery">Cash on Delivery</option>
+                    </select>
+                </div>
+
+                <button type="button" id="generate-bill">Generate Bill</button>
+            </form>
+
+            <div id="bill-output" class="hidden">
+                <pre id="bill-details"></pre>
+            </div>
+
+            <button id="download-bill" class="hidden">Download Bill</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="list">
+            <h2>SERVICES</h2>
+            <ul>
+                <li><a href="#">Visit Store</a></li>
+                <li><a href="#">Buying Guide</a></li>
+                <li><a href="#">Frame Size</a></li>
+                <li><a href="#">Check Power</a></li>
+            </ul>
+        </div>
+
+        <div class="list">
+            <h2>ABOUT US</h2>
+            <ul>
+                <li><a href="#">We Are Hiring</a></li>
+                <li><a href="#">Refer & Earn</a></li>
+                <li><a href="#">Follow Us</a></li>
+                <li><a href="#">Lenskart Coupons</a></li>
+            </ul>
+        </div>
+
+        <div class="list">
+            <h2>HELP</h2>
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Details</a></li>
+            </ul>
+        </div>
+
+        <div class="list">
+            <img src="https://static.lenskart.com/media/desktop/img/play-store.svg" alt="Play Store">
+            <p>Powered By: Cybromatech Technology Pvt Ltd</p>
+        </div>
+    </footer>
+
+    <script src="billing.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuItems = document.querySelectorAll('.menu-item');
+            
+            menuItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const submenu = this.nextElementSibling;
+                    
+                    // Close all other open submenus
+                    menuItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.nextElementSibling.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle the clicked submenu
+                    submenu.classList.toggle('active');
+                });
+            });
+    
+            // Close submenu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.menu')) {
+                    document.querySelectorAll('.submenu').forEach(submenu => {
+                        submenu.classList.remove('active');
+                    });
+                }
+            });
+        });
+        </script>
+</body>
+</html>

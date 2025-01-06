@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+.fnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.fnav .logo {
+    width: 150px;
+    height: auto;
+}
+
+.fnav .phone-icon {
+    width: 120px;
+    height: auto;
+}
+
+.fnav input {
+    width: 100%;
+    max-width: 600px;
+    height: 27px;
+    border-radius: 3px;
+    text-align: center;
+    border: 2px solid gray;
+    margin: 10px 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links p {
+    cursor: pointer;
+}
+
+.nav-links p:hover {
+    color: rgb(42, 189, 94);
+}
+
+.snav {
+    background-color: rgb(218, 213, 213);
+    padding: 11px;
+    position: relative;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.menu > li > a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    padding: 10px 0;
+    z-index: 1001;
+}
+
+.submenu.active {
+    display: block;
+}
+
+.submenu li {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.submenu.submenu li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.submenu li:hover {
+    background-color: #f5f5f5;
+}
+
+.lens {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: rgb(242, 236, 236);
+    flex-wrap: wrap;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.lens img {
+    width: 18%;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.main img {
+    width: 100%;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 11px;
+    flex-wrap: wrap;
+}
+
+.cart .card {
+    text-align: center;
+    margin: 10px;
+}
+
+.card button {
+    width: 100px;
+    height: 33px;
+    color: white;
+    background-color: rgb(52, 180, 180);
+    border-radius: 2px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cart button:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+.cart .card img {
+    width: 70%;
+}
+
+.banner h2 {
+    text-align: center;
+    padding: 32px;
+}
+
+.banner .img img {
+    width: 100%;
+}
+
+.banner .two-img {
+    display: flex;
+    justify-self: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.main-img img {
+    width: 100%;
+}
+
+.two-img img {
+    width: 50%;
+    max-width: 100%;
+}
+
+.goagle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.goagle img {
+    width: 30%;
+    max-width: 100%;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #3f51b5;
+    color: white;
+    padding: 20px;
+}
+
+.footer .list {
+    flex: 1 1 80px;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer .list h2 {
+    margin-bottom: 5px;
+}
+
+.footer .list ul {
+    list-style: none;
+}
+
+.footer .list ul li {
+    margin-bottom: 5px;
+}
+
+.footer .list a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .list img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .fnav {
+        flex-direction: column;
+    }
+
+    .fnav input {
+        width: 90%;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu > li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .submenu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        border: none;
+        background-color: #f8f8f8;
+    }
+
+    .submenu.active {
+        display: block;
+    }
+
+    .lens img {
+        width: 45%;
+    }
+
+    .two-img img {
+        width: 100%;
+    }
+
+    .goagle img {
+        width: 45%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .list {
+        margin-bottom: 20px;
+    }
+}
+

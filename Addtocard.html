@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Optical Store - Cart</title>
+
+    <link rel="stylesheet" href="Addtocard.css">
+
+</head>
+
+<body>
+    <nav class="fnav">
+        <a href="index.html">
+          <img src="logo.jpeg" alt="Lenskart Logo" class="logo">
+          </a>
+        <img src="https://static.lenskart.com/media/mobile/images/phone_number.svg" alt="Phone Number" class="phone-icon">
+        <input type="text" placeholder="What are you looking for">
+        <div class="nav-links">
+            <p>Sign In & Sign Up</p>
+            <p>Wishlist</p>
+            <p>Cart</p>
+        </div>
+    </nav>
+        <nav class="snav">
+            <ul class="menu">
+              <li><a href="#" class="menu-item">Eyeglasses</a>
+                <ul class="submenu">
+                    <li>
+                      <a href="filter.html">
+                        <img src="men1.jpg" alt="Men"> Men
+                      </a>
+                    </li>
+                    <li>
+                      <a href="filter.html">
+                        <img src="women1.jpg" alt="Women"> Women
+                      </a>
+                    </li>
+                    <li>
+                      <a href="filter.html">
+                        <img src="kid.jpg" alt="Kids"> Kids
+                      </a>
+                    </li>
+                  </ul>
+              </li>
+              <li><a href="#" class="menu-item">Screen Glasses</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="filter.html">
+                      <img src="men1.jpg" alt="Men"> Men
+                    </a>
+                  </li>
+                  <li>
+                    <a href="filter.html">
+                      <img src="women1.jpg" alt="Women"> Women
+                    </a>
+                  </li>
+                  <li>
+                    <a href="filter.html">
+                      <img src="kid.jpg" alt="Kids"> Kids
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#" class="menu-item">Contact Lenses</a>
+                <ul class="submenu">
+                    <li>
+                      <a href="filter.html">
+                        <img src="men1.jpg" alt="Men"> Men
+                      </a>
+                    </li>
+                    <li>
+                      <a href="filter.html">
+                        <img src="women1.jpg" alt="Women"> Women
+                      </a>
+                    </li>
+                    <li>
+                      <a href="filter.html">
+                        <img src="kid.jpg" alt="Kids"> Kids
+                      </a>
+                    </li>
+                  </ul>
+              </li>
+              <li><a href="#" class="menu-item">Sunglasses</a>
+                <ul class="submenu">
+                    <li>
+                      <a href="filter.html">
+                        <img src="men1.jpg" alt="Men"> Men
+                      </a>
+                    </li>
+                    <li>
+                      <a href="filter.html">
+                        <img src="women1.jpg" alt="Women"> Women
+                      </a>
+                    </li>
+                    <li>
+                      <a href="filter.html">
+                        <img src="kid.jpg" alt="Kids"> Kids
+                      </a>
+                    </li>
+                  </ul>
+              </li>
+            </ul>
+        </nav>
+
+    <div class="container">
+
+        <h1>Add To Cart</h1>
+
+        <div id="cart-items">
+
+            <!-- Cart items will be dynamically added here -->
+
+        </div>
+
+        <div class="cart-summary">
+
+            <div class="subtotal">Subtotal: Rs. <span id="subtotal">0.00</span></div>
+
+            <div class="discount">Discount: Rs. <span id="discount">0.00</span></div>
+
+            <div class="total">Total: Rs. <span id="total">0.00</span></div>
+
+            <button id="checkout-btn">Generate Bill <a href="billing.html"></a></button>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="list">
+            <h2>SERVICES</h2>
+            <ul>
+                <li><a href="#">Visit Store</a></li>
+                <li><a href="#">Buying Guide</a></li>
+                <li><a href="#">Frame Size</a></li>
+                <li><a href="#">Check Power</a></li>
+            </ul>
+        </div>
+  
+        <div class="list">
+            <h2>ABOUT US</h2>
+            <ul>
+                <li><a href="#">We Are Hiring</a></li>
+                <li><a href="#">Refer & Earn</a></li>
+                <li><a href="#">Follow Us</a></li>
+                <li><a href="#">Lenskart Coupons</a></li>
+            </ul>
+        </div>
+  
+        <div class="list">
+            <h2>HELP</h2>
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Details</a></li>
+            </ul>
+        </div>
+  
+        <div class="list">
+            <img src="https://static.lenskart.com/media/desktop/img/play-store.svg" alt="Play Store">
+            <p>Powered By: Cybromatech Technology Pvt Ltd</p>
+        </div>
+    </div>
+
+    <script src="Addtocard.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuItems = document.querySelectorAll('.menu-item');
+            
+            menuItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const submenu = this.nextElementSibling;
+                    
+                    // Close all other open submenus
+                    menuItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.nextElementSibling.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle the clicked submenu
+                    submenu.classList.toggle('active');
+                });
+            });
+    
+            // Close submenu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.menu')) {
+                    document.querySelectorAll('.submenu').forEach(submenu => {
+                        submenu.classList.remove('active');
+                    });
+                }
+            });
+        });
+        </script>
+
+</body>
+
+</html>
